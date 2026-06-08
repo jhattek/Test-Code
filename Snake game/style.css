@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-color: #222;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(20, 25px);
+  grid-template-rows: repeat(20, 25px);
+  gap: 1px;
+  width: fit-content;
+  margin: 20px auto;
+  background: #444;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  background: #111;
+}
+
+.snake {
+  background: limegreen;
+}
+
+.food {
+  background: red;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.game-over {
+  color: orange;
+  font-size: 24px;
+  margin-top: 10px;
+}
